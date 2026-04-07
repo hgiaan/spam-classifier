@@ -6,10 +6,12 @@ A spam classifier built **entirely from scratch** in Python.
 I wanted to understand how spam filters work. So I built one from scratch using only Python's standard library, implementing every step manually: probabilility estimation, text preprocessing.
 
 ## How it works
-- Base on Naive Bayes - a probabilistics model based on Bayes' Theorem.
+
+- Based on Naive Bayes - a probabilistic model based on Bayes' Theorem.
 Given a message, it computes:
-    score(SPAM) = log P(SPAM) + Σ log P(word | SPAM)
-    score(HAM)  = log P(HAM)  + Σ log P(word | HAM)
+```text
+score(SPAM) = log P(SPAM) + Σ log P(word | SPAM)
+score(HAM)  = log P(HAM)  + Σ log P(word | HAM)
 The label with the higher score wins.
 
 - Key implementation decisions:
@@ -20,10 +22,10 @@ The label with the higher score wins.
 
 ## Results:
 Base on the test, we have the result
---- EVALUATION ---
-Test set size : 1115 messages
-Correct       : 1098
-Accuracy      : 98.5%
+>--- EVALUATION ---
+>Test set size : 1115 messages
+>Correct       : 1098
+>Accuracy      : 98.5%
 
 Sample predictions:
 > "Hey, are you free this afternoon?" → HAM  
@@ -41,6 +43,7 @@ Sample predictions:
 - Maybe build a web interface for everyone to use.
 
 ## Quick Start
+```bash 
 git clone https://github.com/hgiaan/spam-classifier
-cd spam-detector-naive-bayes
-python src/textdetection.py
+cd spam-classifier
+python src/main.py
