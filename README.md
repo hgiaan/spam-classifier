@@ -12,6 +12,7 @@ Given a message, it computes:
 ```text
 score(SPAM) = log P(SPAM) + Σ log P(word | SPAM)
 score(HAM)  = log P(HAM)  + Σ log P(word | HAM)
+```
 The label with the higher score wins.
 
 - Key implementation decisions:
