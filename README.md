@@ -23,10 +23,12 @@ The label with the higher score wins.
 
 ## Results:
 Base on the test, we have the result
->--- EVALUATION ---
->Test set size : 1115 messages
->Correct       : 1098
->Accuracy      : 98.5%
+```text
+--- EVALUATION ---
+Test set size : 1115 messages
+Correct       : 1098
+Accuracy      : 98.5%
+```
 
 Sample predictions:
 > "Hey, are you free this afternoon?" → HAM  
