@@ -1,0 +1,11 @@
+Loaded 5574 messages from spamhamdata.csv
+
+Results: 
+Message: 'Hey, are you free this afternoon to study at the library?'
+=> Prediction: HAM
+
+Message: 'Get a 50% discount voucher now, click the link!'
+=> Prediction: SPAM
+
+Message: 'ofjoaiwjer'
+=> Prediction: SPAM (Unknown words)
