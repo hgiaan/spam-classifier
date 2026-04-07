@@ -4,7 +4,10 @@ These are some fuctions I use for Naive Bayes spam classifier
     + Read tab-seprated file: <label> <TAB> <message>
     + Returns (message, label) tuples
 - preprocess(): clean and tokenise a raw text message
-- evaluate(): measure accuraccty 
+    + Lowercase 
+    + Remove punctuations 
+    + Remove stop words
+    --> Map the same token
 """
 
 import string
@@ -27,3 +30,10 @@ def load_data(filename):
                 message = parts[1].strip()
                 dataset.append((message, label))
     return dataset
+
+def preprocess(text):
+    text = text.lower()
+    for char in string.punctuation:
+        text = text.replace(char, " ")
+    words = text.split()
+    return [word for word in words if word not in STOP_WORDS]
