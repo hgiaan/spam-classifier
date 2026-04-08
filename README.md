@@ -19,8 +19,9 @@ The label with the higher score wins.
     + **Laplace Smoothing** — prevents zero-probability for unseen words
     + **Log-space computation** — avoids floating point underflow
     + **Gibberish filter** — handles messages with entirely unknown vocabulary
+```text
 --> Full mathematical explanation: [docs/how_it_works.pdf]
-
+``` 
 ## Results:
 Base on the test, we have the result
 ```text
