@@ -17,7 +17,8 @@ STOP_WORDS = set([
     'is', 'am', 'are', 'was', 'were', 'will', 'be', 'have', 'has', 'had', 'do', 'does', 'did', 'done',
     'a', 'an', 'the', 'and', 'but', 'if', 'or', 'because', 'as', 'until', 'while',
     'of', 'at', 'by', 'for', 'with', 'about', 'to', 'from', 'in', 'out', 'on', 'off',
-    'get', 'today', 'now', 'just', 'so', 'than', 'too', 'very', 'can', 'this', 'that'
+    'get', 'today', 'now', 'just', 'so', 'than', 'too', 'very', 'can', 'this', 'that',
+    'u', 's', 'm', 't', 'd', 'll', 're', 've', 'not'
 ])
 
 def load_data(filename):

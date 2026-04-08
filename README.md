@@ -19,15 +19,15 @@ The label with the higher score wins.
     + **Laplace Smoothing** — prevents zero-probability for unseen words
     + **Log-space computation** — avoids floating point underflow
     + **Gibberish filter** — handles messages with entirely unknown vocabulary
---> Full mathematical explanation: (not finished yet)
+--> Full mathematical explanation: [docs/how_it_works.pdf]
 
 ## Results:
 Base on the test, we have the result
 ```text
 --- EVALUATION ---
 Test set size : 1115 messages
-Correct       : 1098
-Accuracy      : 98.5%
+Correct       : 1097
+Accuracy      : 98.4%
 ```
 
 Sample predictions:
@@ -43,6 +43,7 @@ Sample predictions:
 ## Limitations and Future Improvements:
 - It reads "word by word", ignore word order (misses the context)
 - It treats all words equally (doesn't help identify spam if words doesn't classify it's priority (red flags words: winner, urgent))
+- In real life, the words “win” and “winning” belong to the same word family, so they are not counted as two separate words.
 - Maybe build a web interface for everyone to use.
 
 ## Quick Start
